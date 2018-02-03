@@ -2,7 +2,7 @@
  * This class stores data about seats.
  */
 
-public class Seats
+public class Seat
 {
     private char seatRow;
     private int seatNumber;
@@ -23,7 +23,7 @@ public class Seats
      * This is copy constructor
      * @param object2 The object to copy
      */
-    public Seats(Seats object2)
+    public Seats(Seat object2)
     {
         seatRow = object2.seatRow;
         seatNumber = object2.seatNumber;
@@ -41,6 +41,16 @@ public class Seats
         this.seatNumber = seatNumber;
     }
 
+    public char getSeatRow()
+    {
+        return this.seatRow;
+    }
+
+    public int getSeatNumber()
+    {
+        return this.seatNumber;
+    }
+    
     /**
      * toString method returns object as a string
      * @return A string containing the seat information.
